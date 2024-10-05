@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="mt-10 mx-2">
+    <div className="">
       <h2 className="text-xl font-bold">About</h2>
       <p className=" text-gray-500">
         {" "}

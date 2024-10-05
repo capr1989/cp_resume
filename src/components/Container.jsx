@@ -1,5 +1,9 @@
 import React from "react";
 
 export const Container = (props) => {
-  return <div className="mx-auto max-w-2xl">{props.children}</div>;
+  return (
+    <div className="flex flex-col m-auto basis-[100%] md:basis-[45%]">
+      {props.children}
+    </div>
+  );
 };

@@ -1,25 +1,26 @@
 import React from "react";
 export const Hero = () => {
   return (
-    <section className="mx-2 ">
-      <div className="mt-28 flex gap 2 ">
-        <div className="flex-col flex-1 flex">
-          {" "}
-          <h1 className="text-4xl font-extrabold my-5">
+    <section className="flex items-center mt-28 mb-10 ">
+      <div className="basis-[100%]">
+        <div className="basis-[100%] m-auto ">
+          <h1 className="text-4xl font-extrabold text-left mb-1">
             Hello world: I'm Carlos 👋
           </h1>
+        </div>
+        <div className="basis-[100%] m-auto ">
           <p className="text-2xl">
             Software Engineer turned Entrepreneur. I love building things and
             helping people. Very active on Twitter.
           </p>
         </div>
-        <span className=" ">
-          <img
-            src="/images/mi_foto.jpg"
-            className="size-40 rounded-full object-cover  aspect-square"
-            alt="Carlos Pretto"
-          />
-        </span>
+      </div>
+      <div className="  basis-[100%] h-[100%]">
+        <img
+          src="/images/mi_foto.jpg"
+          className="size-36  rounded-full object-cover m-auto"
+          alt="Carlos Pretto"
+        />
       </div>
     </section>
   );
