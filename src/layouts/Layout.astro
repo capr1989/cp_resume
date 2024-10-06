@@ -5,6 +5,8 @@ interface Props {
 
 const { title } = Astro.props;
 import { Container } from '@/components/Container';
+import { ViewTransitions } from 'astro:transitions';
+
 ---
 
 <!doctype html>
@@ -16,8 +18,10 @@ import { Container } from '@/components/Container';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
+
 	</head>
 	<body class="">
-		<main class="flex w-fit  ">		<Container> <slot /></Container></main>
+		<main class="flex  ">		<Container> <slot /></Container></main>
 	</body>
 </html>

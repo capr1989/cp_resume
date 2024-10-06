@@ -1,28 +1,34 @@
-import React from "react";
+import { getCollection } from "astro:content";
+
+const cvCollection = await getCollection("cvs");
+
+const data_analyst = cvCollection[0].data;
+
+const { title, subTitle, image } = data_analyst;
 export const Hero = () => {
   return (
-    <section className="flex items-center mt-28 mb-10 ">
-      <div className="basis-[100%]">
-        <div className="basis-[100%] m-auto ">
-          <h1 className="text-4xl font-extrabold text-left mb-1">
-            Hello world: I'm Carlos 👋
-          </h1>
+    <div>
+      <section className="flex mt-28 mb-10 ">
+        <div className="basis-[70%] shrink flex-col ">
+          <div className=" shrink ">
+            <h1 className="text-4xl font-bold text-left mb-1 tracking-tighter">
+              {title}
+            </h1>
+          </div>
+
+          <div className=" shrink ">
+            <p className="text-2xl text-left opacity-90">{subTitle}</p>
+          </div>
         </div>
-        <div className="basis-[100%] m-auto ">
-          <p className="text-2xl">
-            Software Engineer turned Entrepreneur. I love building things and
-            helping people. Very active on Twitter.
-          </p>
+        <div className=" flex basis-[30%]  shrink-0  h-fit  justify-end">
+          <img
+            src={image.url}
+            className="size-28  rounded-full object-cover shrink-0 "
+            alt={image.alt}
+          />
         </div>
-      </div>
-      <div className="  basis-[100%] h-[100%]">
-        <img
-          src="/images/mi_foto.jpg"
-          className="size-36  rounded-full object-cover m-auto"
-          alt="Carlos Pretto"
-        />
-      </div>
-    </section>
+      </section>
+    </div>
   );
   {
     /* wide screen
