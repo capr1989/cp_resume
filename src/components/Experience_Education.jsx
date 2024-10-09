@@ -5,7 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export const Job = () => {
+("use client");
+
+export const Experience_Education = () => {
   {
     /* (browser support) if (document.startViewTransition) {
     // (check for browser support)

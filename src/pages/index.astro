@@ -3,7 +3,7 @@ import '@/../styles/globals.css'
 import { Hero } from '@/components/Hero'
 import Layout from '@/layouts/Layout.astro'
 import { About } from '@/components/About'
-import { Job } from '@/components/Job'
+import { Experience_Education } from '@/components/Experience_Education'
 import type { on } from 'htmx.org'
 
 
@@ -15,6 +15,6 @@ import type { on } from 'htmx.org'
 <Layout>
 	<Hero />
 	<About />
-	<Job client:only />
+	<Experience_Education client:only />
 
 </Layout>
