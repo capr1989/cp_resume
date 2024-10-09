@@ -21,34 +21,42 @@ export const Job = () => {
   }
 
   return (
-    <Accordion type="single" collapsible>
-      <AccordionItem value="item-1">
-        <AccordionTrigger>
-          <div className="flex justify-between basis-full items-center">
-            <div className="flex gap-2 items-center">
-              <span>
-                <img
-                  src="../../public/images/images.png"
-                  alt=""
-                  className="size-12  rounded-full object-cover border border-grey-400"
-                />
-              </span>
-              <div className="">
-                <span>
-                  <h3 className="text-left">Banco general</h3>
-                </span>
-                <span className="">Software Engineer</span>
-              </div>
+    <div className="mt-10">
+      <h2 className="text-xl font-bold">Experience</h2>
+      <Accordion type="single" collapsible className="">
+        <AccordionItem className="" value="item-1">
+          <AccordionTrigger className="flex basis-full justify-between">
+            <div className="flex basis-[90px]">
+              <img
+                src="../../public/images/images.png"
+                alt=""
+                className="size-12  rounded-full object-cover border border-grey-400"
+              />
             </div>
-            <span className="">May 2021 - Oct 2022</span>
-          </div>
-        </AccordionTrigger>
-        <AccordionContent className="h-auto">
-          <p className="text-sm ml-[55px] ">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>{" "}
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+
+            <div className="flex justify-between  basis-full items-center">
+              <div className="text-left">
+                <span>
+                  <h3 className="font-bold">
+                    <p>Banco general</p>
+                  </h3>
+                </span>
+                <span className="font-light text-sm">
+                  <p>Banco general</p>
+                </span>
+              </div>
+              <span className="font-light text-sm text-gray-500 mr-1">
+                <p>May 2021 - Oct 2022</p>
+              </span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="">
+            <p className="text-left ml-[76px]">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>{" "}
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
   );
 };
