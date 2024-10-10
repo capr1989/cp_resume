@@ -1,10 +1,9 @@
 import { getCollection } from "astro:content";
 
-const cvCollection = await getCollection("cvs");
+import { data } from "../cvs/data-analyst/cv";
 
-const data_analyst = cvCollection[0].data;
+const { title, subTitle, image } = data;
 
-const { title, subTitle, image } = data_analyst;
 export const Hero = () => {
   return (
     <div>

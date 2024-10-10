@@ -1,10 +1,6 @@
-import { getCollection } from "astro:content";
+import { data } from "../cvs/data-analyst/cv";
 
-const cvCollection = await getCollection("cvs");
-
-const data_analyst = cvCollection[0].data;
-
-const { about } = data_analyst;
+const { about } = data;
 export const About = () => {
   return (
     <div className="">

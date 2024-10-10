@@ -5,9 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-("use client");
+import { data } from "../cvs/data-analyst/cv";
 
-export const Experience_Education = () => {
+export const Experience_Education = ({ jobs, name }) => {
   {
     /* (browser support) if (document.startViewTransition) {
     // (check for browser support)
@@ -22,43 +22,80 @@ export const Experience_Education = () => {
      */
   }
 
-  return (
+  return jobs ? (
     <div className="mt-10">
-      <h2 className="text-xl font-bold">Experience</h2>
+      <h2 className="text-xl font-bold">{name}</h2>
       <Accordion type="single" collapsible className="">
-        <AccordionItem className="" value="item-1">
-          <AccordionTrigger className="flex basis-full justify-between">
-            <div className="flex basis-[90px]">
-              <img
-                src="../../public/images/images.png"
-                alt=""
-                className="size-12  rounded-full object-cover border border-grey-400"
-              />
-            </div>
+        {data.experience.map((experience, index) => (
+          <AccordionItem className="" value={"item-" + index} key={index}>
+            <AccordionTrigger className="flex basis-full justify-between h-auto py-3">
+              <div className="flex basis-[90px]">
+                <img
+                  src={experience.company_logo}
+                  alt={experience.company}
+                  className="size-12  rounded-full object-cover border border-grey-400"
+                />
+              </div>
 
-            <div className="flex justify-between  basis-full items-center">
-              <div className="text-left">
-                <span>
-                  <h3 className="font-bold">
-                    <p>Banco general</p>
-                  </h3>
-                </span>
-                <span className="font-light text-sm">
-                  <p>Banco general</p>
+              <div className="flex justify-between  basis-full items-center">
+                <div className="text-left">
+                  <span>
+                    <h3 className="font-bold">
+                      <p>{experience.company}</p>
+                    </h3>
+                  </span>
+                  <span className="font-light text-sm">
+                    <p>{experience.position}</p>
+                  </span>
+                </div>
+                <span className="font-light text-sm text-gray-500 mr-1">
+                  <p>{experience.date}</p>
                 </span>
               </div>
-              <span className="font-light text-sm text-gray-500 mr-1">
-                <p>May 2021 - Oct 2022</p>
+            </AccordionTrigger>
+            <AccordionContent className="">
+              <p className="text-left ml-[76px]">
+                <p>{experience.description}</p>{" "}
+              </p>{" "}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </div>
+  ) : (
+    <div className="mt-10">
+      <h2 className="text-xl font-bold">{name}</h2>
+      {data.experience.map((experience, index) => (
+        <div
+          value={"item-" + index}
+          key={index + 1}
+          className="flex basis-full justify-between h-auto py-3"
+        >
+          <div className="flex basis-[90px]">
+            <img
+              src={experience.company_logo}
+              alt={experience.company}
+              className="size-12  rounded-full object-cover border border-grey-400"
+            />
+          </div>
+
+          <div className="flex justify-between  basis-full items-center">
+            <div className="text-left">
+              <span>
+                <h3 className="font-bold">
+                  <p>{experience.company}</p>
+                </h3>
+              </span>
+              <span className="font-light text-sm">
+                <p>{experience.position}</p>
               </span>
             </div>
-          </AccordionTrigger>
-          <AccordionContent className="">
-            <p className="text-left ml-[76px]">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>{" "}
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+            <span className="font-light text-sm text-gray-500 mr-1">
+              <p>{experience.date}</p>
+            </span>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

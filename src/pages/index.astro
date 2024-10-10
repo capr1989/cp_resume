@@ -4,17 +4,29 @@ import { Hero } from '@/components/Hero'
 import Layout from '@/layouts/Layout.astro'
 import { About } from '@/components/About'
 import { Experience_Education } from '@/components/Experience_Education'
-import type { on } from 'htmx.org'
+import {Skills} from '@/components/Skills'
+import {Footer} from '@/components/Footer'
 
+import { data } from "../cvs/data-analyst/cv";
+
+
+
+
+export const prerender = true;
 
 
 
 ---
 
 
-<Layout>
+<Layout title="Resume">
 	<Hero />
 	<About />
-	<Experience_Education client:only />
+	<Experience_Education client:load jobs={true} name="Experience"/>
+	<Experience_Education jobs={false} name="Education"/>
+	<Skills data={data}/>
+	<Footer />
+
+
 
 </Layout>
