@@ -5,28 +5,17 @@ import Layout from '@/layouts/Layout.astro'
 import { About } from '@/components/About'
 import { Experience_Education } from '@/components/Experience_Education'
 import {Skills} from '@/components/Skills'
-import {Footer} from '@/components/Footer'
+import { data } from "../data/cvs/data-analyst/cv";
 
-import { data } from "../cvs/data-analyst/cv";
-
-
-
-
-export const prerender = true;
-
-
+const { about, experience, skills, 	education ,	title, subTitle ,	image } = data;
 
 ---
 
 
-<Layout title="Resume">
-	<Hero />
-	<About />
-	<Experience_Education client:load jobs={true} name="Experience"/>
-	<Experience_Education jobs={false} name="Education"/>
-	<Skills data={data}/>
-	<Footer />
-
-
-
+<Layout title="Carlos Pretto - CV" content={subTitle}>
+	<Hero title={title} subTitle={subTitle} image={image}/>
+	<About about={about} />
+	<Experience_Education client:load jobs={true}, experience={experience} name="Experience"/>
+	<Experience_Education jobs={false} name="Education", education={education}/>
+	<Skills skills={skills}/>
 </Layout>

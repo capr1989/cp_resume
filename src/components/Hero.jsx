@@ -1,21 +1,15 @@
-import { getCollection } from "astro:content";
-
-import { data } from "../cvs/data-analyst/cv";
-
-const { title, subTitle, image } = data;
-
-export const Hero = () => {
+export const Hero = ({ title, subTitle, image }) => {
   return (
     <div>
-      <section className="flex mt-28 mb-10 ">
-        <div className="basis-[70%] shrink flex-col ">
-          <div className=" shrink ">
-            <h1 className="text-4xl font-bold text-left mb-1 tracking-tighter">
+      <section className="flex mt-28 ">
+        <div className=" flex-col ">
+          <div className="  ">
+            <h1 className="text-3xl font-bold text-left mb-1 tracking-tighter">
               {title}
             </h1>
           </div>
 
-          <div className=" shrink ">
+          <div className="  ">
             <p className="text-2xl text-left opacity-90">{subTitle}</p>
           </div>
         </div>

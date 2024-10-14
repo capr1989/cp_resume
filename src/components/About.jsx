@@ -1,10 +1,7 @@
-import { data } from "../cvs/data-analyst/cv";
-
-const { about } = data;
-export const About = () => {
+export const About = ({ about }) => {
   return (
-    <div className="">
-      <h2 className="text-xl font-bold">About</h2>
+    <div className="mt-10">
+      <h2 className="text-xl font-bold py-3">About</h2>
       <p className=" text-gray-500"> {about}</p>
     </div>
   );

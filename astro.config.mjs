@@ -6,6 +6,8 @@ import tailwind from "@astrojs/tailwind";
 
 import node from "@astrojs/node";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -13,9 +15,11 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
+    sitemap(),
   ],
+  site: "https://carlospretto.com",
 
-  output: "server",
+  output: "hybrid",
 
   adapter: node({
     mode: "standalone",
