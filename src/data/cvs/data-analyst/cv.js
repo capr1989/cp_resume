@@ -5,7 +5,7 @@ export const data = {
   about:
     "Soy un analista de datos autodidacta, orientado a resultados y con pasión por el aprendizaje. Me especializo en el uso de herramientas y técnicas de análisis de datos para ayudar a las empresas a tomar decisiones informadas y alcanzar sus objetivos. Además, tengo una gran pasión por el desarrollo web y conocimiento en este campo, lo que me permite crear soluciones digitales eficaces. Mis habilidades analíticas me permiten identificar oportunidades de optimización y desarrollar soluciones innovadoras que mejoran el rendimiento general, lo que me convierte en un activo valioso para cualquier organización que busque obtener una ventaja competitiva.",
   image: {
-    url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/mi_foto_zwkgec.jpg",
+    url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941020/mi_foto_i9ehwr.webp",
     alt: "Carlos Pretto",
   },
 
@@ -20,7 +20,7 @@ export const data = {
         "Fui reconocido como Top Performer debido a mi efectividad en la ejecución de tareas y el logro de mis objetivos.",
       ],
       company_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/alorica_juifyj.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941023/alorica_vmoovv.webp",
         alt: "Alorica",
       },
     },
@@ -32,7 +32,7 @@ export const data = {
         "Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento de paquetes de UPS.",
       ],
       company_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/alorica_juifyj.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941023/alorica_vmoovv.webp",
         alt: "Alorica",
       },
     },
@@ -45,7 +45,7 @@ export const data = {
         "Administré la plataforma escolar de la institución (School Access), alimentándola con planes académicos, informes, calificaciones y tareas de los estudiantes.",
       ],
       company_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/asrl_obwnhj.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941019/asrl_ax6zbk.webp",
         alt: "Academía Santa Rosa de Lima",
       },
     },
@@ -59,7 +59,7 @@ export const data = {
         "Actué como mentor para mis colegas, ayudando a mejorar sus habilidades y técnicas de ventas.",
       ],
       company_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/banco_general_bjpbv9.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941020/banco_generalwebp_dhzuet.webp",
         alt: "Banco General",
       },
     },
@@ -71,7 +71,7 @@ export const data = {
       degree: "Máster en Análisis de Datos",
       date: "2023 - 2025",
       university_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/utp_lfpnxt.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941019/utp_jfcsr6.webp",
         alt: "Universidad Tecnológica de Panamá",
       },
     },
@@ -80,7 +80,7 @@ export const data = {
       degree: "Licenciatura en Economía con minor en Marketing",
       date: "2010 - 2014",
       university_logo: {
-        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/semo_btp8dx.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941020/semo_uhbsdg.webp",
         alt: "Southeast Missouri State University",
       },
     },
@@ -92,6 +92,7 @@ export const data = {
     "JavaScript",
     "HTML",
     "CSS",
+    "Git",
     "Resolución de problemas",
     "trabajo en equipo",
     "pensamiento crítico",

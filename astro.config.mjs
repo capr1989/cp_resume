@@ -8,14 +8,44 @@ import sitemap from "@astrojs/sitemap";
 
 import cloudflare from "@astrojs/cloudflare";
 
+import purgecss from "astro-purgecss";
+
+import compressor from "astro-compressor";
+
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    inlineStylesheets: "never",
+  },
   integrations: [
     react(),
     tailwind({
       applyBaseStyles: false,
     }),
     sitemap(),
+    compressor({
+      fileExtensions: [
+        ".html",
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx",
+        ".css",
+        ".xml",
+        ".cjs",
+        ".mjs",
+        ".svg",
+      ],
+    }),
+    purgecss({
+      extractors: [
+        {
+          extractor: (content) =>
+            content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
+          extensions: ["astro", "html", "js", "jsx", "ts", "tsx"],
+        },
+      ],
+    }),
   ],
   site: "https://carlospretto.com",
 

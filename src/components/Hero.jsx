@@ -19,6 +19,9 @@ export const Hero = ({ title, subTitle, image }) => {
             src={image.url}
             className="size-28  rounded-full object-cover shrink-0 "
             alt={image.alt}
+            height="112px"
+            width="112px"
+            loading="lazy"
           />
         </div>
       </section>

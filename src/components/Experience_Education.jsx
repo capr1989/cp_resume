@@ -11,20 +11,6 @@ export const Experience_Education = ({
   experience = {},
   education = {},
 }) => {
-  {
-    /* (browser support) if (document.startViewTransition) {
-    // (check for browser support)
-    document.addEventListener("click", function (event) {
-      if (event.target.matches("summary")) {
-        event.preventDefault(); // (we'll toggle the element ourselves)
-        const details = event.target.closest("details");
-        document.startViewTransition(() => details.toggleAttribute("open"));
-      }
-    });
-  }
-     */
-  }
-
   return jobs ? (
     <div className="mt-10">
       <h2 className="text-xl font-bold">{name}</h2>
@@ -39,6 +25,7 @@ export const Experience_Education = ({
                   width="48px"
                   height="48px"
                   className="size-12  rounded-full object-cover border border-grey-400"
+                  loading="lazy"
                 />
               </div>
 
@@ -61,8 +48,8 @@ export const Experience_Education = ({
             <AccordionContent className="">
               <ul className="text-left ml-[76px]">
                 {experience.descriptions.map((description, index) => (
-                  <li className="list-disc" key={index}>
-                    {description}
+                  <li className="list-disc text-lg md:text-sm" key={index}>
+                    <p className="">{description}</p>
                   </li>
                 ))}
               </ul>{" "}
@@ -87,6 +74,7 @@ export const Experience_Education = ({
               width="48px"
               height="48px"
               className="size-12  rounded-full object-cover border border-grey-400"
+              loading="lazy"
             />
           </div>
 

@@ -67,3 +67,11 @@
     @apply bg-background text-foreground;
   }
 }
+p {
+  @apply text-base;
+}
+@media (min-width: 1024px) {
+  p {
+    @apply text-sm;
+  }
+}
