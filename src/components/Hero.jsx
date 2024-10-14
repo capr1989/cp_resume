@@ -17,7 +17,7 @@ export const Hero = ({ title, subTitle, image }) => {
         <div className=" flex basis-[30%]  shrink-0  h-fit  justify-end">
           <img
             src={image.url}
-            className="size-28  rounded-full object-cover shrink-0 "
+            className="size-28 rounded-full object-cover shrink-0"
             alt={image.alt}
             height="112px"
             width="112px"
