@@ -5,7 +5,7 @@ export const data = {
   about:
     "Soy un analista de datos autodidacta, orientado a resultados y con pasión por el aprendizaje. Me especializo en el uso de herramientas y técnicas de análisis de datos para ayudar a las empresas a tomar decisiones informadas y alcanzar sus objetivos. Además, tengo una gran pasión por el desarrollo web y conocimiento en este campo, lo que me permite crear soluciones digitales eficaces. Mis habilidades analíticas me permiten identificar oportunidades de optimización y desarrollar soluciones innovadoras que mejoran el rendimiento general, lo que me convierte en un activo valioso para cualquier organización que busque obtener una ventaja competitiva.",
   image: {
-    url: "../../../images/mi_foto.jpg",
+    url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/mi_foto_zwkgec.jpg",
     alt: "Carlos Pretto",
   },
 
@@ -20,7 +20,7 @@ export const data = {
         "Fui reconocido como Top Performer debido a mi efectividad en la ejecución de tareas y el logro de mis objetivos.",
       ],
       company_logo: {
-        url: "../../../../public/images/alorica.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/alorica_juifyj.jpg",
         alt: "Alorica",
       },
     },
@@ -32,7 +32,7 @@ export const data = {
         "Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento de paquetes de UPS.",
       ],
       company_logo: {
-        url: "../../../../public/images/alorica.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/alorica_juifyj.jpg",
         alt: "Alorica",
       },
     },
@@ -45,7 +45,7 @@ export const data = {
         "Administré la plataforma escolar de la institución (School Access), alimentándola con planes académicos, informes, calificaciones y tareas de los estudiantes.",
       ],
       company_logo: {
-        url: "../../../../public/images/asrl.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/asrl_obwnhj.jpg",
         alt: "Academía Santa Rosa de Lima",
       },
     },
@@ -59,7 +59,7 @@ export const data = {
         "Actué como mentor para mis colegas, ayudando a mejorar sus habilidades y técnicas de ventas.",
       ],
       company_logo: {
-        url: "../../../../public/images/banco_general.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876952/banco_general_bjpbv9.jpg",
         alt: "Banco General",
       },
     },
@@ -71,7 +71,7 @@ export const data = {
       degree: "Máster en Análisis de Datos",
       date: "2023 - 2025",
       university_logo: {
-        url: "../../../../public/images/utp.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/utp_lfpnxt.jpg",
         alt: "Universidad Tecnológica de Panamá",
       },
     },
@@ -80,7 +80,7 @@ export const data = {
       degree: "Licenciatura en Economía con minor en Marketing",
       date: "2010 - 2014",
       university_logo: {
-        url: "../../../../public/images/semo.jpg",
+        url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728876953/semo_btp8dx.jpg",
         alt: "Southeast Missouri State University",
       },
     },

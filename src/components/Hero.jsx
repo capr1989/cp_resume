@@ -1,4 +1,5 @@
 export const Hero = ({ title, subTitle, image }) => {
+  console.log(image.url);
   return (
     <div>
       <section className="flex mt-28 ">
