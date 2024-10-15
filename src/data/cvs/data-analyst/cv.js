@@ -29,7 +29,7 @@ export const data = {
       position: "Walmart Customer Service Representative",
       date: "2020",
       descriptions: [
-        "•	Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento en la entrega de mercancía.",
+        "Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento en la entrega de mercancía.",
       ],
       company_logo: {
         url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941023/alorica_vmoovv.webp",
