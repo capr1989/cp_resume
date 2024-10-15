@@ -15,7 +15,7 @@ const { about, experience, skills, 	education ,	title, subTitle ,	image } = data
 <Layout title="Carlos Pretto - CV" content={subTitle}>
 	<Hero title={title} subTitle={subTitle} image={image}/>
 	<About about={about} />
-	<Experience_Education client:load jobs={true}, experience={experience} name="Experiencia"/>
-	<Experience_Education jobs={false} name="Educación", education={education}/>
-	<Skills skills={skills}/>
+	<Experience_Education client:visible jobs={true}, experience={experience} name="Experiencia"/>
+	<Experience_Education jobs={false}  name="Educación", education={education}/>
+	<Skills  skills={skills}/>
 </Layout>

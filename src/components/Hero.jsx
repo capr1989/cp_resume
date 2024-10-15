@@ -21,7 +21,6 @@ export const Hero = ({ title, subTitle, image }) => {
             alt={image.alt}
             height="112px"
             width="112px"
-            loading="lazy"
           />
         </div>
       </section>

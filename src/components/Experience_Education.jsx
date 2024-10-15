@@ -25,7 +25,6 @@ export const Experience_Education = ({
                   width="48px"
                   height="48px"
                   className="size-12  rounded-full object-cover border border-grey-400"
-                  loading="lazy"
                 />
               </div>
 
@@ -74,7 +73,6 @@ export const Experience_Education = ({
               width="48px"
               height="48px"
               className="size-12  rounded-full object-cover border border-grey-400"
-              loading="lazy"
             />
           </div>
 
