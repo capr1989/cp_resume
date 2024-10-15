@@ -3,7 +3,7 @@ export const data = {
   subTitle:
     "Analista de datos y desarrollador web apasionado. Me encanta crear soluciones digitales innovadoras.",
   about:
-    "Soy un analista de datos autodidacta, orientado a resultados y con pasión por el aprendizaje. Me especializo en el uso de herramientas y técnicas de análisis de datos para ayudar a las empresas a tomar decisiones informadas y alcanzar sus objetivos. Además, tengo una gran pasión por el desarrollo web y conocimiento en este campo, lo que me permite crear soluciones digitales eficaces. Mis habilidades analíticas me permiten identificar oportunidades de optimización y desarrollar soluciones innovadoras que mejoran el rendimiento general, lo que me convierte en un activo valioso para cualquier organización que busque obtener una ventaja competitiva.",
+    "Soy un analista de datos,  autodidacta con gran interés por el aprendizaje continuo. Mi especialidad es el uso de herramientas y técnicas de análisis de datos para ayudar a las empresas a tomar decisiones informadas. Mis habilidades analíticas me permiten identificar oportunidades de mejora y desarrollar soluciones innovadoras que optimizan el rendimiento convirtiéndome en un recurso valioso para cualquier organización que busque una ventaja competitiva. Además cuento con conocimientos en el desarrollo web, lo que me permite crear soluciones digitales efectivas.",
   image: {
     url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941020/mi_foto_i9ehwr.webp",
     alt: "Carlos Pretto",
@@ -29,7 +29,7 @@ export const data = {
       position: "Walmart Customer Service Representative",
       date: "2020",
       descriptions: [
-        "Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento de paquetes de UPS.",
+        "•	Responsable de manejar problemas de clientes relacionados con pedidos en línea. Ejemplos incluyen reembolsos, devoluciones, compensaciones y seguimiento en la entrega de mercancía.",
       ],
       company_logo: {
         url: "https://res.cloudinary.com/dieykc68z/image/upload/v1728941023/alorica_vmoovv.webp",
@@ -41,7 +41,7 @@ export const data = {
       position: "Soporte Técnico",
       date: "2019",
       descriptions: [
-        "Encargado de brindar soporte a redes, sistemas y computadoras de la academia.",
+        "Encargado de brindar soporte a redes, sistemas y computadoras del plantel.",
         "Administré la plataforma escolar de la institución (School Access), alimentándola con planes académicos, informes, calificaciones y tareas de los estudiantes.",
       ],
       company_logo: {
@@ -55,7 +55,7 @@ export const data = {
       date: "2015 - 2017",
       descriptions: [
         "Fui promovido a vendedor de tarjetas de crédito y préstamos personales debido a mi iniciativa de ofrecer productos bancarios, a pesar de que las ventas no eran parte de mis funciones.",
-        "Alcancé consistentemente mis cuotas de ventas, vendiendo entre 30 y 36 tarjetas de crédito al mes, junto con 2-3 préstamos personales.",
+        "Alcancé consistentemente mis cuotas de ventas, vendiendo entre 30 y 36 tarjetas de crédito al mes, junto con mi meta de préstamos personales.",
         "Actué como mentor para mis colegas, ayudando a mejorar sus habilidades y técnicas de ventas.",
       ],
       company_logo: {
