@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
-  const espUrl = "../../public/cvs/CV_ESPAÑOL_2024.pdf";
+  const espUrl = "../../public/cvs/carlos_pretto_cv_espanol_2024.pdf";
   return (
     <footer className="my-10 text-center">
       <h2 className="text-3xl font-bold py-2">¡Contáctame!</h2>
